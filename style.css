@@ -1,0 +1,70 @@
+h1,caption {
+	color: blue;
+	background-color: yellow;
+	font-size: 20px;
+font-size: small;
+font-size: 100%;
+font-size: 1em;
+
+}
+#background: content-box radial-gradient(crimson, skyblue);
+br {
+voice-family: male;
+richness: 80;
+cue-before: url("beep.au")
+}
+img {float: right;}
+body {line-height: 1.2;}
+p {background: #B1B1B1; color: #FFF; font-weight: bold;
+border-width: 4px; border-style: solid; border-top-color: #DFDFDF;
+border-right-color: #666; border-bottom-color: #333; border-left-color:
+#858585;}
+table {
+    width: 100%; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+   }
+   td, th {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid #000; /* Параметры рамки */
+   }
+   th {
+    background: #afd792; /* Цвет фона */
+    color: #333;  /* Цвет текста */
+   }
+   tbody tr:hover {
+    background: #f3bd48; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
+   }
+   .hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    border-bottom: 1px dotted green;
+    padding: 0;
+    color: green;
+    cursor: pointer;
+    display: inline-block; 
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px; 
+}
+
+/* demo контейнер */
+.demo {
+    margin: 5% 10%;
+}
